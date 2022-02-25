@@ -23,12 +23,13 @@ a {
   );
   color: black;
   font-family: "Raleway", sans-serif;
-  width: 600px;
+  width: 650px;
   margin-top: 80px;
+
   border-color: #aac1ee;
   border-style: solid;
   border-radius: 8%;
-  padding: 50px 25px;
+  padding: 50px 30px 10px;
 }
 ul {
   padding: 0;
@@ -49,4 +50,9 @@ ul {
 }
 .following-days {
   text-align: center;
+}
+.author {
+  text-align: center;
+  font-size: small;
+  font-weight: 900;
 }
