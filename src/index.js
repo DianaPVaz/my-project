@@ -90,6 +90,8 @@ function convertToFahrenheit(event) {
   let temperature = temperatureElement.innerHTML;
   temperature = Number(temperature);
   temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+  let descriptionElement = document.querySelector("#description");
+  let description = descriptionElement.innerHTML;
 }
 
 function convertToCelsius(event) {
