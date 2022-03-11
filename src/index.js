@@ -62,7 +62,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = "http://openweathermap.org/img/wn/10d@2x.png";
+  iconElement.setAttribute(src, "http://openweathermap.org/img/wn/10d@2x.png");
 }
 function handleSubmit(event) {
   event.preventDefault();
