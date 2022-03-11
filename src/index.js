@@ -65,9 +65,8 @@ function displayWeatherCondition(response) {
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
-
   );
-let iconElement.setAttribute("alt",  response.data.weather[0].description);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function handleSubmit(event) {
   event.preventDefault();
