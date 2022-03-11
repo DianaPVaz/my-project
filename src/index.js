@@ -59,7 +59,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#description").innerHTML = response.data.weather[0];
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0][2];
 }
 function handleSubmit(event) {
   event.preventDefault();
