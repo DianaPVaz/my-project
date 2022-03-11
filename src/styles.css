@@ -47,6 +47,8 @@ ul {
 }
 .quote {
   text-align: center;
+  font-style: italic;
+  size: 12px;
 }
 .following-days {
   text-align: center;
