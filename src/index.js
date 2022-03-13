@@ -97,7 +97,7 @@ function displayToFahrenheitTemperature(event) {
 function displayTocelciusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = celciusTemperature;
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 let celciusTemperature = null;
 
