@@ -91,17 +91,17 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 function displayToFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let FahrenheitTemperature = temperatureElement.innerHTML;
-  FahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
+
+  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let celciusTemperature = null;
+
+searchCity("Utrecht");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
-
-searchCity("Utrecht");
