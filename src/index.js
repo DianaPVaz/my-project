@@ -94,7 +94,7 @@ function displayToFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-function displayTocelciusTemperature(event) {
+function displayCelciusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
@@ -108,6 +108,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 
 let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", displayTocelciusTemperature);
+celciusLink.addEventListener("click", displayCelciusTemperature);
 
 searchCity("Utrecht");
