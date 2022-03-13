@@ -62,3 +62,8 @@ ul {
 .units .active {
   cursor: default;
 }
+
+.units .active:hover {
+  cursor: default;
+  text-decoration: none;
+}
