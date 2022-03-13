@@ -63,7 +63,7 @@ ul {
   cursor: default;
 }
 
-.active:hover {
+a.active:hover {
   cursor: default;
   text-decoration: none;
   color: black;
