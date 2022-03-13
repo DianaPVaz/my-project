@@ -59,7 +59,7 @@ ul {
   font-weight: 900;
 }
 
-.units.active {
+.active {
   color: red;
   cursor: default;
 }
