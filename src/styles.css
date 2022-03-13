@@ -12,6 +12,7 @@ form {
   top: 10px;
 }
 a {
+  text-decoration: none;
   color: black;
 }
 .container {
@@ -59,6 +60,5 @@ ul {
 }
 
 .active {
-  text-decoration: none;
   cursor: default;
 }
