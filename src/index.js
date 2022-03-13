@@ -45,7 +45,7 @@ function displayWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
-    Math.round(celciusTemperature);
+    Math.round(celsiusTemperature);
 
   document.querySelector("#max").innerHTML = Math.round(
     response.data.main.temp_max
@@ -97,7 +97,7 @@ function displayToFahrenheitTemperature(event) {
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 let celsiusTemperature = null;
 
@@ -107,6 +107,6 @@ form.addEventListener("submit", handleSubmit);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 
-let celciusLink = document.querySelector("#celsius-link");
-celciusLink.addEventListener("click", displayCelsiusTemperature);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("Utrecht");
