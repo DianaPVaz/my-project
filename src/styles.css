@@ -11,10 +11,7 @@ form {
   position: relative;
   top: 10px;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
+
 .container {
   background: linear-gradient(
     to top,
@@ -59,10 +56,7 @@ ul {
   font-weight: 900;
 }
 
-.celsius-link {
+.active {
   color: red;
   cursor: default;
-}
-.temperature.active:hover {
-  text-decoration: none;
 }
