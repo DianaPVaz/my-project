@@ -59,7 +59,7 @@ ul {
   font-weight: 900;
 }
 
-.temperature.active {
+.units.active {
   color: red;
   cursor: default;
 }
