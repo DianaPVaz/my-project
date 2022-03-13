@@ -59,6 +59,6 @@ ul {
   font-weight: 900;
 }
 
-.active {
+.units.active {
   cursor: default;
 }
