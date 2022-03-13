@@ -61,4 +61,8 @@ ul {
 
 .temperature.active {
   color: black;
+  cursor: default;
+}
+.temperature.active:hover {
+  text-decoration: none;
 }
