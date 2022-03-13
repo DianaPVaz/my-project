@@ -59,11 +59,11 @@ ul {
   font-weight: 900;
 }
 
-.units .active {
+.active {
   cursor: default;
 }
 
-.units .active:hover {
+.active:hover {
   cursor: default;
   text-decoration: none;
 }
