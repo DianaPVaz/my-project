@@ -94,7 +94,11 @@ function displayToFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
+function displayTocelciusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celciusTemperature;
+}
 let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
