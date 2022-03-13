@@ -42,6 +42,7 @@ function searchCity(city) {
 }
 
 function displayWeatherCondition(response) {
+  celciusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
     Math.round(celciusTemperature);
@@ -66,7 +67,6 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  celciusTemperature = response.data.main.temp;
 }
 function handleSubmit(event) {
   event.preventDefault();
@@ -88,7 +88,6 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Utrecht");
 function displayToFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -110,3 +109,5 @@ fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
+
+searchCity("Utrecht");
