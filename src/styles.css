@@ -60,7 +60,7 @@ ul {
 }
 
 .temperature.active {
-  color: black;
+  color: red;
   cursor: default;
 }
 .temperature.active:hover {
