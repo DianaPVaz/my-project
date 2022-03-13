@@ -109,5 +109,4 @@ fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
-
 searchCity("Utrecht");
