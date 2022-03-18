@@ -34,6 +34,25 @@ let month = months[now.getMonth()];
 today.innerHTML = `${day}, ${month} ${date}`;
 time.innerHTML = `${hour}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col following-days">
+          ${day}
+          <div><img src="http://openweathermap.org/img/wn/10d@2x.png"></div>
+          <div>20° | 12°</div>
+        </div>       `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchCity(city) {
   let apiKey = "05d4c4d3a2e5e07dfee4452fa88bf546";
 
@@ -114,3 +133,5 @@ fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("Utrecht");
+
+displayForecast();
