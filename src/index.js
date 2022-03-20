@@ -42,7 +42,6 @@ function formatDay(timeStamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -94,7 +93,6 @@ function displayWeatherCondition(response) {
     response.data.main.temp_min
   );
 
-  console.log(response.data);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
