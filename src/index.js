@@ -51,14 +51,14 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-        <div class="col following-days"> ${formatDay(
+        <div class="col following-days" > <span class="aa"> ${formatDay(
           forecastDay.dt
-        )} <div> <img src="http://openweathermap.org/img/wn/${
+        )}</span> <div> <img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }.png"></div>
-          <div> ${Math.round(forecastDay.temp.max)}° | ${Math.round(
-          forecastDay.temp.min
-        )}°</div>
+          <span class = "maximum"> ${Math.round(
+            forecastDay.temp.max
+          )}° </span  >| <span> ${Math.round(forecastDay.temp.min)}°</span>
         </div>       `;
     }
   });
