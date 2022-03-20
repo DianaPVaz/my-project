@@ -81,3 +81,6 @@ a.active:hover {
   text-decoration: none;
   color: black;
 }
+.max {
+  font-weight: 500;
+}
