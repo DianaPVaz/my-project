@@ -129,6 +129,11 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+searchCity("New York");
+
+//C to F conversion
 ///function displayToFahrenheitTemperature(event) {
 //event.preventDefault();
 //let temperatureElement = document.querySelector("#temperature");
@@ -146,12 +151,8 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 //}
 //let celsiusTemperature = null;
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
-
 //let fahrenheitLink = document.querySelector("#fahrenheit-link");
 //fahrenheitLink.addEventListener("click", displayToFahrenheitTemperature);
 
 //let celsiusLink = document.querySelector("#celsius-link");
 //celsiusLink.addEventListener("click", displayCelsiusTemperature);
-searchCity("New York");
